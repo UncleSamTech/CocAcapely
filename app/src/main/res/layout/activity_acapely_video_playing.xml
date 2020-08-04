@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AcapelyVideoPlayingActivity">
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/rhem_youtube_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:autoPlay="false"
+        app:showYouTubeButton="true"
+        app:showSeekBar="true"
+        app:showFullScreenButton="true" />
+
+    <!--<view
+        android:id="@+id/youtube_view"
+        class="com.google.android.youtube.player.YouTubePlayerView"
+        android:layout_width="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="90dp"
+        android:layout_margin="8dp"
+        tools:layout_editor_absoluteY="288dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/com_smart_login_code"
+        android:textColor="@color/design_default_color_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/youtube_view"
+        android:text="@string/play_videos"
+        android:layout_margin="16dp"
+        android:id="@+id/but_youtube"
+        app:layout_constraintEnd_toEndOf="parent"/>-->
+
+</LinearLayout>

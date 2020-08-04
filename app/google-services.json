@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "569231877649",
+    "firebase_url": "https://acapely-9dbc7.firebaseio.com",
+    "project_id": "acapely-9dbc7",
+    "storage_bucket": "acapely-9dbc7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:569231877649:android:d2774d90058ad5596773b0",
+        "android_client_info": {
+          "package_name": "com.unclesamtech.cocacapely"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "569231877649-rmgp4g9k5eq2dh4ji3ntp2bkfcspf3pm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.unclesamtech.cocacapely",
+            "certificate_hash": "dbbca8c7cd9285cdd214761cd8b3b51eb0fe2520"
+          }
+        },
+        {
+          "client_id": "569231877649-ppqjbdcuhei5r6vqdq8iiaqpb8jdn3tm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDog6aMGDjmw6D0j3dIFZW4JwG4FJK4zJo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "569231877649-ppqjbdcuhei5r6vqdq8iiaqpb8jdn3tm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

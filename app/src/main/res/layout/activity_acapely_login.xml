@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".AcapelyLogin">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cons_acapely">
+
+    <TextView
+        android:id="@+id/welc_tv_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:fontFamily="@font/fauna_one"
+        android:gravity="center"
+        android:text="@string/login_with"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/cons_acapely"
+        app:layout_constraintStart_toStartOf="@id/cons_acapely"
+        app:layout_constraintTop_toTopOf="@id/cons_acapely" />
+
+    <ImageButton
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:id="@+id/twit_ui"
+        android:contentDescription="@string/app_name"
+        android:background="@drawable/ic_twitt_ico"
+        app:layout_constraintTop_toBottomOf="@+id/welc_tv_label"
+        android:layout_margin="36dp"
+        app:layout_constraintBottom_toTopOf="@id/login_button"
+        app:layout_constraintEnd_toStartOf="@+id/goog_ui"
+        app:layout_constraintStart_toStartOf="@+id/cons_acapely"
+        />
+
+    <ImageButton
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:contentDescription="@string/app_name"
+        android:id="@+id/goog_ui"
+        android:background="@drawable/ic_goog_ico"
+        app:layout_constraintTop_toBottomOf="@+id/welc_tv_label"
+        android:layout_margin="36dp"
+        app:layout_constraintEnd_toEndOf="@id/cons_acapely"
+        app:layout_constraintStart_toEndOf="@+id/twit_ui"/>
+
+
+
+
+    <!-- <ImageButton
+         android:layout_width="44dp"
+         android:layout_height="44dp"
+         android:id="@+id/goog_ui"
+         android:background="@drawable/ic_goog_ico"
+         app:layout_constraintTop_toBottomOf="@+id/welc_tv_label"
+         android:layout_margin="36dp"
+         android:contentDescription="@string/app_name"
+         app:layout_constraintEnd_toEndOf="@+id/cons_acapely"
+         app:layout_constraintStart_toEndOf="@+id/twit_ui"/>-->
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="@id/cons_acapely"
+        app:layout_constraintTop_toBottomOf="@+id/twit_ui"
+        app:layout_constraintStart_toStartOf="@+id/cons_acapely"
+         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        app:layout_constraintStart_toStartOf="@+id/cons_acapely"
+        app:layout_constraintEnd_toEndOf="@+id/cons_acapely"
+        app:layout_constraintBottom_toBottomOf="@id/cons_acapely"
+        android:orientation="vertical"
+        android:padding="4dp"
+        android:id="@+id/lin_acap"
+        app:layout_constraintTop_toBottomOf="@id/login_button"
+        android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:id="@+id/or_label"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_margin="8dp"
+            android:fontFamily="@font/fauna_one"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp"
+            android:textAlignment="textStart"
+            android:gravity="start"
+            android:text="@string/or"
+            />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/edit_text_back"
+            android:padding="14dp"
+            android:layout_weight="3"
+            android:textSize="12sp"
+            android:layout_margin="8dp"
+            android:drawablePadding="6dp"
+            android:id="@+id/email_app_edt_log"
+            android:hint="@string/email_hint"
+            android:inputType="textEmailAddress"
+            android:fontFamily="@font/fauna_one"
+            android:drawableStart="@drawable/ic_email_color"
+            />
+
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="@drawable/edit_text_back"
+            android:layout_margin="8dp"
+            android:textSize="12sp"
+            android:padding="14dp"
+            android:drawablePadding="6dp"
+            android:hint="@string/password_hint"
+            android:fontFamily="@font/fauna_one"
+            android:id="@+id/pass_app_edt_log"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/ic_password_icon"
+            />
+
+
+
+
+
+        <TextView
+            android:id="@+id/forget_pass_label"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            app:layout_constraintTop_toBottomOf="@+id/pass_id"
+            android:fontFamily="@font/fauna_one"
+            android:textColor="#FF6B03"
+            android:textSize="12sp"
+            android:textAlignment="textEnd"
+            android:gravity="end"
+            android:text="@string/forgot_password"
+            android:layout_margin="8dp"
+            android:layout_gravity="end"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="@drawable/button_back"
+            android:layout_margin="8dp"
+            android:text="@string/sign_in_text"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:fontFamily="@font/fauna_one"
+            android:padding="8dp"
+            android:id="@+id/sign_up_btn"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/lin_acap"
+        app:layout_constraintBottom_toBottomOf="@id/cons_acapely"
+        app:layout_constraintStart_toStartOf="@id/cons_acapely"
+        app:layout_constraintEnd_toEndOf="@id/cons_acapely"
+        android:layout_margin="8dp"
+        android:padding="6dp"
+        >
+
+        <TextView
+            android:id="@+id/dont_have_lab"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_gravity="start"
+            android:fontFamily="@font/fauna_one"
+            android:textColor="#FF6B03"
+            android:textSize="12sp"
+            android:padding="2dp"
+            android:textAlignment="textStart"
+            android:gravity="start"
+            android:text="@string/dont_have_an_account"
+            />
+
+        <TextView
+            android:id="@+id/sign_up_lab"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:fontFamily="@font/fauna_one"
+            android:textColor="#FF6B03"
+            android:textSize="12sp"
+            android:padding="2dp"
+            android:gravity="end"
+            android:layout_gravity="end"
+            android:text="@string/sign_up_profile"
+            />
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

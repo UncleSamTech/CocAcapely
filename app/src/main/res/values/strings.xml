@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Acapely</string>
+    <string name="login_with">Acapely..Login with</string>
+    <string name="forgot_password">Forgot password ?</string>
+    <string name="email_hint">example@yourdomain.com</string>
+    <string name="password_hint">Password</string>
+    <string name="sign_in_text">Sign In !</string>
+    <string name="sign_up_profile">Sign Up ! !</string>
+    <string name="dont_have_an_account">Dont have an Account ?</string>
+    <string name="already_registered">Already Registered ?</string>
+    <string name="or">Or</string>
+    <string name="sign_up_on_acaeply">Sign Up On Acaeply</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="facebook_app_id">290580588929843</string>
+    <string name="fb_login_protocol_scheme">fb290580588929843</string>
+    <string name="twitter_consumer_key" translatable="false">7qbBhCP6n1dKN4uzY06Uo2H12</string>
+    <string name="twitter_consumer_secret" translatable="false">DdAKys0gNGPFHnKhLuX7mGZ3rGshgaVL9ZK42PefamdJEK49ZR</string>
+    <string name="tc_acapely_contents">Welcome to the Acapely digital service application. These are our terms and conditions for use of the application which you may access through the information section of the application. Please read these terms and conditions of use carefully before accessing, using or obtaining any materials, information, products or services through the Acapely platform. In these Terms, “we”, “us”, “our”, or “Acapely”, refers to the Acapely Corporation, and “you” or “your” refers to you as the user of our website or application. By accessing and using the Acapely mobile application , you accept and agree to be bound by our terms and conditions of use. In addition, when using this service, you will be subject to the guidelines and rules enclosed in this agreement. If you do not agree to abide by our terms and conditions, then you may not use our website or application.</string>
+    <string name="click_here_to_read_more">Click Here to Read More</string>
+    <string name="i_have_read_and_accepted_the_terms_and_conditions_of_acapely">I have read and Accepted the terms and conditions of Acapely</string>
+    <string name="cont_lab"><![CDATA[Contine > >]]></string>
+    <string name="acapely_terms_of_use">Acapely Terms of Use</string>
+    <string name="welc">Welcome </string>
+    <string name="reset_password_pane">Reset Password Pane</string>
+    <string name="title_activity_acapely_dashboard">AcapelyDashboard</string>
+    <string name="tab_text_1">Video Playlist</string>
+    <string name="tab_text_2">Music Playlist</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="register_your_playlist">Register Your Playlist</string>
+    <string name="attach_picture">Attach Picture</string>
+    <string name="enter_playlist_id">Enter Playlist Id</string>
+    <string name="enter_playlist_title">Enter Playlist Title</string>
+    <string name="enter_artist_name">Enter Artist Name</string>
+    <string name="enter_artist_id">Enter Artist Id</string>
+    <string name="learn_how_to_get_artist_id">Learn How to Get Artist Id ?</string>
+    <string name="learn_how_to_get_video_playlist_id">Learn How to Get Video Playlist Id ?</string>
+</resources>

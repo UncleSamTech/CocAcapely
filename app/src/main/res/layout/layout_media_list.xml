@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="4dp"
+        app:cardElevation="6dp"
+        android:id="@+id/card_view_playlists"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/church_playlist_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:fontFamily="@font/fauna_one"
+            android:padding="6dp"
+            tools:text="Sermon Playlist"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            android:gravity="center_horizontal" />
+
+        <!--<ImageView
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_book_news"
+            android:src="@drawable/ic_bookmark_clear"
+            android:contentDescription="@string/already_registered"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/news_title"
+            android:layout_alignParentRight="true"
+            android:layout_toEndOf="@id/news_title"
+            android:layout_marginRight="8dp" />-->
+
+        <ImageView
+            android:id="@+id/playlist_loggo"
+            android:layout_width="match_parent"
+            tools:src= "@drawable/acapely"
+            android:layout_height="160dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:padding="8dp"
+            android:fontFamily="@font/fauna_one"
+            android:layout_below="@id/church_playlist_title"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/playlist_church"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/playlist_loggo"
+            android:paddingBottom="5dp"
+            android:drawableStart="@drawable/ic_edit_color"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/colorPrimary"
+            tools:text="Posted by Church of Christ"
+            android:textSize="13sp"
+            android:fontFamily="@font/fauna_one"
+            />
+
+        <TextView
+            android:id="@+id/playlist_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/playlist_church"
+            android:textColor="@color/colorPrimary"
+            android:paddingBottom="5dp"
+            android:drawableStart="@drawable/ic_time"
+            android:paddingLeft="10dp"
+            android:layout_margin="8dp"
+            android:paddingRight="10dp"
+            android:visibility="gone"
+            tools:text="12:30pm"
+            android:fontFamily="@font/fauna_one"
+            android:textSize="13sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_below="@id/playlist_church"
+            android:textSize="12sp"
+            android:visibility="gone"
+            android:id="@+id/playlist_id"
+            android:textColor="@color/design_default_color_background"/>
+    </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
