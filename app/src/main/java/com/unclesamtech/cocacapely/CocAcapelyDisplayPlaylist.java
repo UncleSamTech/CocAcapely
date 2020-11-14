@@ -49,8 +49,10 @@ public class CocAcapelyDisplayPlaylist extends AppCompatActivity {
         //the NetworkInfo class gets the current state of the device network connection
         networkInfo = connMgr.getActiveNetworkInfo();
         playlist_id = retrPlayId("AcapelyPlayId",MODE_PRIVATE,"AcapelyPlayPrefId");
-        String API_URL  = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=";
-        String YOUTUBE_API_KEY = "AIzaSyB3hpjfjylcprSwLoi-LZZ33EBF7hTSiC0";
+        //String API_URL  = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=";
+        String API_URL  = "";
+       // String YOUTUBE_API_KEY = "AIzaSyB3hpjfjylcprSwLoi-LZZ33EBF7hTSiC0";
+        String YOUTUBE_API_KEY = "";
         String API_OTHERS = "&key=" + YOUTUBE_API_KEY + "&maxResults=50";
         String COMP_API_URL = API_URL + playlist_id + API_OTHERS;
         pBar = new ProgressDialog(c);
